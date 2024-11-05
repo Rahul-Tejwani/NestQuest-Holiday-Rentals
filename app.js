@@ -96,9 +96,13 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("error.ejs", { err });
 });
 
-// app.all("*", (req, res, next) => {
-//   next(new ExpressError(404, "Page Not Found!"));
-// });
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
+app.all("*", (req, res, next) => {
+  next(new ExpressError(404, "Page Not Found!"));
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port : ${PORT}`);
