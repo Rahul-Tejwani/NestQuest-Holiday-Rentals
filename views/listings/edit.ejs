@@ -1,0 +1,95 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-4">
+  <div class="col-8 offset-2">
+    <h3>Edit the Listing</h3>
+    <form
+      method="POST"
+      action="/listings/<%= existingRecord._id %>?_method=PUT"
+      class="needs-validation"
+      novalidate
+      enctype="multipart/form-data"
+    >
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          type="text"
+          name="listing[title]"
+          value="<%= existingRecord.title %>"
+          id="title"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">Title is a required field</div>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea
+          name="listing[description]"
+          id="description"
+          class="form-control"
+          required
+        >
+<%= existingRecord.description %></textarea
+        >
+        <div class="invalid-feedback">Enter a short description</div>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Existing Listing Image</label
+        ><br />
+        <img src="<%= originalImageUrl %>" class="edit-img" />
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Upload new Image</label>
+        <input
+          type="file"
+          name="listing[image]"
+          id="image"
+          class="form-control"
+        />
+      </div>
+      <!--To bring Price and location into same line-->
+      <div class="row">
+        <div class="mb-3 col-md-4">
+          <label for="price" class="form-label">Price</label>
+          <input
+            type="number"
+            name="listing[price]"
+            value="<%= existingRecord.price %>"
+            id="price"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Price should be valid</div>
+        </div>
+        <div class="mb-3 col-md-8">
+          <label for="location" class="form-label">Location</label>
+          <input
+            type="text"
+            name="listing[location]"
+            value="<%= existingRecord.location %>"
+            id="location"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Location is a required field</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <input
+          type="text"
+          name="listing[country]"
+          value="<%= existingRecord.country %>"
+          id="country"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">Country is a required field</div>
+      </div>
+      <div class="d-grid col-3 mx-auto my-4">
+        <button class="btn btn-dark edit-btn">Edit Listing</button>
+      </div>
+      <br />
+    </form>
+  </div>
+</div>
