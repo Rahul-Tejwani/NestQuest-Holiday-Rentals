@@ -1,4 +1,6 @@
-# NestQuest Project Overview
+# NestQuest Full Stack Project
+
+## Project Overview
 
 NestQuest is a full stack application designed to simplify property rentals with a seamless user experience. Using NestQuest users can list, edit and manage their rental properties for travelers or locals looking for unique stays. With secure sign-in, image uploads, review capabilities, and map integration, users can explore and post listings with ease. Built to showcase full-stack expertise, NestQuest ensures reliability and ease for both hosts and travelers.
 
