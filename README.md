@@ -19,7 +19,6 @@ NestQuest is a full stack application designed to simplify property rentals with
 - **MVC Pattern**: Structured the application with the MVC (Model-View-Controller) framework, making the code clean, enhancing modularity and scalability.
 
 ### Frontend, Backend & Database
-
 - **EJS**: Embedded JavaScript templates for dynamic content rendering.
 - **Connect Flash**: Middleware for flashing success and error messages, improving user feedback.
 - **Node.js**: JavaScript runtime environment for server side development.
