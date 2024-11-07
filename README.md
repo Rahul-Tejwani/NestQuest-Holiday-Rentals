@@ -1,8 +1,9 @@
-# NestQuest Project Overview
+# NestQuest Full Stack Project
 
+## Project Overview:
 NestQuest is a full stack application designed to simplify property rentals with a seamless user experience. Using NestQuest users can list, edit and manage their rental properties for travelers or locals looking for unique stays. With secure sign-in, image uploads, review capabilities, and map integration, users can explore and post listings with ease. Built to showcase full-stack expertise, NestQuest ensures reliability and ease for both hosts and travelers.
 
-## Key Features
+## Key Features:
 
 - **Secure User Authentication:** Implements robust authentication for secure SignUp, Login, and Logout, using industry-standard techniques.
 - **CRUD Operations for Listings:** Provides complete control over property listings with Create, Read, Update, and Delete functionalities.
@@ -12,10 +13,9 @@ NestQuest is a full stack application designed to simplify property rentals with
 - **Data Security:** Safeguards sensitive user information using advanced hashing and encryption methods and advanced session management.
 - **User Authorisation:** The authorization functionality ensures that only registered users can rent/list properties or create reviews. And only listing owners have the privilege to modify or delete their properties ensuring data integrity and secure access.
 
-## Architecture, Technologies & Packages Used
+## Architecture, Technologies & Packages Used:
 
 ### Architecture
-
 - **MVC Pattern**: Structured the application with the MVC (Model-View-Controller) framework, making the code clean, enhancing modularity and scalability.
 
 ### Frontend, Backend & Database
@@ -27,23 +27,19 @@ NestQuest is a full stack application designed to simplify property rentals with
 - **Mongoose**: Object Data Modeling (ODM) library for MongoDB.
 
 ### Authentication & Environment Management
-
 - **Passport.js**: Authentication middleware for implementing secure user authentication.
 - **Passport Local**: Local authentication strategy.
 - **Passport Local Mongoose**: Package for simplifying integration with Mongoose for secure password management.
 - **Dotenv**: Manages environment variables, ensuring sensitive configuration data remains secure.
 
 ### File Uploads, Image Storage & Mapping
-
 - **Multer**: Middleware for handling multipart/form-data, enabling efficient file uploads.
 - **Cloudinary**: Cloud storage for storing and handling high quality image uploads for listings.
 - **Mapbox**: Mapping API for integrating interactive maps, providing real-time location visualization.
 
 ### Session Management
-
 - **Connect Mongo & Express Session**: For effective session management and Handling.
 - **Cookie Parser**: Parses cookie headers, facilitating secure cookie management for session handling.
 
 ### Data Validation
-
 - **Joi**: Schema validation library for validating server-side data, ensuring API requests are compliant, secure, and efficient, ideal for testing tools like Postman and Hoppscotch.
