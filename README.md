@@ -1,10 +1,10 @@
 # NestQuest Holiday Rentals
 
-## Project Overview:
+## Project Overview
 
 NestQuest is a full stack application designed to simplify property rentals with a seamless user experience. Using NestQuest users can list, edit and manage their rental properties for travelers or locals looking for unique stays. With secure sign-in, image uploads, review capabilities, and map integration, users can explore and post listings with ease. Built to showcase full-stack expertise, NestQuest ensures reliability and ease for both hosts and travelers.
 
-## Key Features:
+## Key Features
 
 - **Secure User Authentication:** Implements robust authentication for secure SignUp, Login, and Logout, using industry-standard techniques.
 - **CRUD Operations for Listings:** Provides complete control over property listings with Create, Read, Update, and Delete functionalities.
@@ -14,7 +14,7 @@ NestQuest is a full stack application designed to simplify property rentals with
 - **Data Security:** Safeguards sensitive user information using advanced hashing and encryption methods and advanced session management.
 - **User Authorisation:** The authorization functionality ensures that only registered users can rent/list properties or create reviews. And only listing owners have the privilege to modify or delete their properties ensuring data integrity and secure access.
 
-## Architecture, Technologies & Packages Used:
+## Architecture, Technologies & Packages Used
 
 ### Architecture
 - **MVC Pattern**: Structured the application with the MVC (Model-View-Controller) framework, making the code clean, enhancing modularity and scalability.
