@@ -17,11 +17,9 @@ NestQuest is a full stack application designed to simplify property rentals with
 ## Architecture, Technologies & Packages Used
 
 ### Architecture
-
 - **MVC Pattern**: Structured the application with the MVC (Model-View-Controller) framework, making the code clean, enhancing modularity and scalability.
 
 ### Frontend, Backend & Database
-
 - **EJS**: Embedded JavaScript templates for dynamic content rendering.
 - **Connect Flash**: Middleware for flashing success and error messages, improving user feedback.
 - **Node.js**: JavaScript runtime environment for server side development.
@@ -30,23 +28,19 @@ NestQuest is a full stack application designed to simplify property rentals with
 - **Mongoose**: Object Data Modeling (ODM) library for MongoDB.
 
 ### Authentication & Environment Management
-
 - **Passport.js**: Authentication middleware for implementing secure user authentication.
 - **Passport Local**: Local authentication strategy.
 - **Passport Local Mongoose**: Package for simplifying integration with Mongoose for secure password management.
 - **Dotenv**: Manages environment variables, ensuring sensitive configuration data remains secure.
 
 ### File Uploads, Image Storage & Mapping
-
 - **Multer**: Middleware for handling multipart/form-data, enabling efficient file uploads.
 - **Cloudinary**: Cloud storage for storing and handling high quality image uploads for listings.
 - **Mapbox**: Mapping API for integrating interactive maps, providing real-time location visualization.
 
 ### Session Management
-
 - **Connect Mongo & Express Session**: For effective session management and Handling.
 - **Cookie Parser**: Parses cookie headers, facilitating secure cookie management for session handling.
 
 ### Data Validation
-
 - **Joi**: Schema validation library for validating server-side data, ensuring API requests are compliant, secure, and efficient, ideal for testing tools like Postman and Hoppscotch.
