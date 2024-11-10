@@ -1,4 +1,4 @@
-# NestQuest Full Stack Project
+# NestQuest Holiday Rentals
 
 ## Project Overview
 
