@@ -1,5 +1,5 @@
 body {
-  background-color: #f0fff0 !important;
+  background-color: #ffffff !important;
   font-family: "Plus Jakarta Sans", sans-serif !important;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@ body {
 /* Styling Navbar component -> "navbar.ejs"*/
 .navbar {
   height: 5rem;
-  background-color: #fcdcf4;
+  background-color: #ffffff;
 }
 
 .fa-compass {
@@ -64,7 +64,7 @@ body {
 /* Styling Card component -> "index.ejs"*/
 .listing-card {
   /*Added new class 'listing-card' to div 'card' in page 'index.ejs' & 'show.ejs' */
-  background-color: #f0fff0 !important;
+  background-color: #ffffff !important;
   border: none !important;
   margin-bottom: 1rem;
 }
@@ -129,4 +129,21 @@ body {
 #map {
   height: 300px;
   width: 85vh;
+}
+
+/* Styling for index.ejs page */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter {
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 1.2rem;
+  opacity: 0.8;
+}
+
+.filter p {
+  font-size: 0.8rem;
 }
