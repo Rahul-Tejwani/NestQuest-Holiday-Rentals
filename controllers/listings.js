@@ -116,3 +116,47 @@ module.exports.destroyListing = async (req, res) => {
   req.flash("success", "Listing Deleted successfully.");
   res.redirect("/listings");
 };
+
+module.exports.search = async (req, res) => {
+  let input = req.query.search.trim().replace(/\s+/g, " "); // Remove starting, ending and middle space remove and add one space in middle.
+  if (input == "" || input == " ") {
+    //search value empty
+    req.flash("error", "Search value empty !!!");
+    res.redirect("/listings");
+  }
+
+  // Convert first letter of every word capital and rest small.
+  let data = input.split("");
+  let element = "";
+  let flag = false;
+  for (let index = 0; index < data.length; index++) {
+    if (index == 0 || flag) {
+      element = element + data[index].toUpperCase();
+    } else {
+      element = element + data[index].toLowerCase();
+    }
+    flag = data[index] == " ";
+  }
+  let allListings = await Listing.find({
+    title: { $regex: element, $options: "i" },
+  });
+  if (allListings.length != 0) {
+    res.locals.success = "Listings searched by Title";
+    res.render("listings/index.ejs", { allListings });
+    return;
+  }
+  if (allListings.length == 0) {
+    allListings = await Listing.find({
+      country: { $regex: element, $options: "i" },
+    }).sort({ _id: -1 });
+    if (allListings.length != 0) {
+      res.locals.success = "Listings searched by Country";
+      res.render("listings/index.ejs", { allListings });
+      return;
+    }
+  }
+  if (allListings.length == 0) {
+    req.flash("error", "Listings is not here !!!");
+    res.redirect("/listings");
+  }
+};
