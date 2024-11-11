@@ -62,7 +62,7 @@
   <!--Loop to display all the Listings present in database-->
   <% for(listing of allListings){ %>
   <a href="/listings/<%= listing._id %>" class="listing-link">
-    <div class="card listing-card">
+    <div class="card listing-card mt-2 me-1">
       <img
         src="<%= listing.image.url %>"
         class="card-img-top"
