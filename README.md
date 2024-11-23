@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-NestQuest is a full stack application designed to simplify property rentals with a seamless user experience. Using NestQuest users can list, edit and manage their rental properties for travelers or locals looking for unique stays. With secure sign-in, dynamic property locations via integrated map features, review system to rate listings enhancing interaction and engagement, users can explore and post listings with ease. The platform incorporates robust client/server validation, image uploads, and flash messages for clear user feedback. Built to showcase full-stack expertise, NestQuest ensures reliability and ease for both hosts and travelers.
+NestQuest is a full stack application designed using MVC(Model-View-Controller) framework to simplify property rentals with a seamless user experience. Using NestQuest users can list, edit and manage their rental properties for travelers or locals looking for unique stays. With secure sign-in, dynamic property locations via integrated map features, review system to rate listings enhancing interaction and engagement, users can explore and post listings with ease. The platform incorporates robust client/server validation, image uploads, and flash messages for clear user feedback. Built to showcase full-stack expertise, NestQuest ensures reliability and ease for both hosts and travelers.
 
 ## Key Features
 
