@@ -6,11 +6,11 @@ NestQuest is a full stack application designed using MVC(Model-View-Controller) 
 
 ## Key Features
 
-- **Secure User Authentication:** Implements robust authentication for secure SignUp, Login, and Logout, using industry-standard techniques.
 - **CRUD Operations for Listings:** Provides complete control over property listings with Create, Read, Update, and Delete functionalities.
 - **Review System:** The review system enables users to submit and remove feedback on listings, helping renters make informed decisions and enhancing community engagement.
 - **Image Upload Functionality:** Allows listing owners to upload and edit high-quality images, providing visually engaging listings to potential renters.
 - **Interactive Real-Time Location:** Integrated interactive maps using external APIs to display precise property locations and nearby amenities, enhancing user experience with dynamic, real-time location visualization.
+- **Secure User Authentication:** Implements robust authentication for secure SignUp, Login, and Logout, using industry-standard techniques.
 - **Data Security:** Safeguards sensitive user information using advanced hashing and encryption methods and advanced session management.
 - **User Authorisation:** The authorization functionality ensures that only registered users can rent/list properties or create reviews. And only listing owners have the privilege to modify or delete their properties ensuring data integrity and secure access.
 
